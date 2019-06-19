@@ -1,0 +1,140 @@
+EESchema Schematic File Version 4
+LIBS:AMS1117-cache
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 3
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L taobao-components:USB_Micro U?
+U 1 1 5D0E47F3
+P 2750 2150
+F 0 "U?" H 2750 2650 50  0000 C CNN
+F 1 "USB_Micro" H 2750 2550 50  0000 C CNN
+F 2 "footprint-lib:USB_Micro-B_Molex-105017-0001" H 2750 1650 50  0001 C CNN
+F 3 "" H 2750 1650 50  0001 C CNN
+	1    2750 2150
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5D0E4D6E
+P 2150 2650
+F 0 "#PWR?" H 2150 2400 50  0001 C CNN
+F 1 "GND" H 2200 2450 50  0000 C CNN
+F 2 "" H 2150 2650 50  0001 C CNN
+F 3 "" H 2150 2650 50  0001 C CNN
+	1    2150 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2150 2650 2150 2250
+Wire Wire Line
+	2150 1950 2350 1950
+Wire Wire Line
+	2350 2050 2150 2050
+Connection ~ 2150 2050
+Wire Wire Line
+	2150 2050 2150 1950
+Wire Wire Line
+	2150 2250 2350 2250
+Connection ~ 2150 2250
+Wire Wire Line
+	2150 2250 2150 2050
+Wire Wire Line
+	2150 2350 2350 2350
+$Comp
+L power:VBUS #PWR?
+U 1 1 5D0E5271
+P 3700 1700
+F 0 "#PWR?" H 3700 1550 50  0001 C CNN
+F 1 "VBUS" H 3750 1900 50  0000 C CNN
+F 2 "" H 3700 1700 50  0001 C CNN
+F 3 "" H 3700 1700 50  0001 C CNN
+	1    3700 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3700 1700 3700 1950
+Wire Wire Line
+	3700 1950 3150 1950
+$Comp
+L taobao-components:SRV05-4 U?
+U 1 1 5D0ECBC9
+P 3900 2900
+F 0 "U?" H 3900 3300 50  0000 C CNN
+F 1 "SRV05-4" H 3900 3200 50  0000 C CNN
+F 2 "footprint-lib:SRV05-4" H 3900 2400 50  0001 C CNN
+F 3 "" H 3900 2900 50  0001 C CNN
+	1    3900 2900
+	1    0    0    -1  
+$EndComp
+Text Label 4850 2050 2    50   ~ 0
+USB_N
+Text Label 4850 2150 2    50   ~ 0
+USB_P
+Wire Wire Line
+	3150 2050 4400 2050
+Wire Wire Line
+	3150 2150 3400 2150
+$Comp
+L power:GND #PWR?
+U 1 1 5D0EE2C4
+P 3250 2500
+F 0 "#PWR?" H 3250 2250 50  0001 C CNN
+F 1 "GND" H 3300 2300 50  0000 C CNN
+F 2 "" H 3250 2500 50  0001 C CNN
+F 3 "" H 3250 2500 50  0001 C CNN
+	1    3250 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3250 2500 3250 2350
+Wire Wire Line
+	3250 2350 3150 2350
+$Comp
+L power:GND #PWR?
+U 1 1 5D0EE779
+P 3200 3150
+F 0 "#PWR?" H 3200 2900 50  0001 C CNN
+F 1 "GND" H 3250 2950 50  0000 C CNN
+F 2 "" H 3200 3150 50  0001 C CNN
+F 3 "" H 3200 3150 50  0001 C CNN
+	1    3200 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3200 3150 3200 2900
+Wire Wire Line
+	3200 2900 3450 2900
+Wire Wire Line
+	3700 1950 4500 1950
+Wire Wire Line
+	4500 1950 4500 2900
+Wire Wire Line
+	4500 2900 4350 2900
+Connection ~ 3700 1950
+Wire Wire Line
+	4350 2800 4400 2800
+Wire Wire Line
+	4400 2800 4400 2050
+Connection ~ 4400 2050
+Wire Wire Line
+	4400 2050 4850 2050
+Wire Wire Line
+	3450 2800 3400 2800
+Wire Wire Line
+	3400 2800 3400 2150
+Connection ~ 3400 2150
+Wire Wire Line
+	3400 2150 4850 2150
+$EndSCHEMATC
