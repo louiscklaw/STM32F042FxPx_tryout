@@ -1,5 +1,5 @@
 EESchema Schematic File Version 4
-LIBS:AMS1117-cache
+LIBS:STM32F042FxPx_tryout-cache
 EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
